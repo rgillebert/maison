@@ -9,11 +9,11 @@ class m170512_084327_actionPO extends Migration
         echo 'create the actionPO';
         $this->createTable('actionPO', [
             'actionPO_id' => $this->primaryKey(),
-            'actionPO_annee' => $this->int(),
+            'actionPO_annee' => $this->integer(),
             'actionPO_action' => $this->string(),
             'actionPO_description' => $this->string(),
-            'etage_id' => $this->int(),
-            'actionAgent_id' => $this->int()
+            'etage_id' => $this->integer(),
+            'actionAgent_id' => $this->integer()
         ]);
     }
 
