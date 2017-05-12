@@ -68,8 +68,13 @@ class ActionagentController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->actionAgent_id]);
         } else {
+            $actions= \app\models\Actionpo::find()->all();
+            
+            $actionmapping= \yii\helpers\ArrayHelper::map($actions, 'actionPO_id', 'actionPO_description');
+            
             return $this->render('create', [
                 'model' => $model,
+                'actionmapping' => $actionmapping    
             ]);
         }
     }
