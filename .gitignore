@@ -4,3 +4,14 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+.bowerrc
+LICENSE.md
+codeception.yml
+commands/
+composer.json
+composer.lock
+requirements.php
+runtime/
+vendor/
+yii
+yii.bat
