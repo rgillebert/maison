@@ -37,10 +37,10 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Agent', 'url' => ['/site/agent']],
-            ['label' => 'Action agent', 'url' => ['/site/actionagent']],
-            ['label' => 'Etage', 'url' => ['/site/etage']],
-            ['label' => 'Action PO', 'url' => ['/site/actionpo']],
+            ['label' => 'Agent', 'url' => ['/agent/index']],
+            ['label' => 'Action agent', 'url' => ['/actionagent/index']],
+            ['label' => 'Etage', 'url' => ['/etage/index']],
+            ['label' => 'Action PO', 'url' => ['/actionpo']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
